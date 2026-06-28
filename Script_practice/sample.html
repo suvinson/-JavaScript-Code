@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>js</title>
+    </head>
+    <body>
+        <center><h1>Hello world!</h1><br>
+        <h1 id = "head">Hi</h1>
+        <h2 id = "h">hh</h2><br>
+        <button id = "submit">submit</button></center>
+    </body>
+    <script>
+        console.log("Hello world!");
+        console.log(document);
+        console.log(document.title);
+
+        let element = document.getElementById('head');
+        console.log(element);
+        console.log(element.textContent);
+        element.textContent += ' Everyone';
+        console.log(element.textContent);
+
+        let hello = document.getElementById('h');
+        element.innerHTML = 'hello';
+        console.log(element.textContent);
+        
+        let s = document.getElementById('submit');
+        s.addEventListener('click' , (event)=>{ s.textContent = "submitted";});
+        s.addEventListener('mouseover' , (event)=>{ s.textContent = "hover";});
+    </script>
+</html>
